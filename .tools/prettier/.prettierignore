@@ -1,0 +1,11 @@
+node_modules/
+mittelblot-db-backup/
+*.min.*
+*.bundle.*
+._*
+*bootstrap*
+*bootstrap*
+*vendor*
+.husky/
+*.md
+*.ttf
