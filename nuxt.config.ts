@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   srcDir: 'src',
+  runtimeConfig: {
+    public: {
+      sentryDsn: process.env.SENTRY_DSN,
+    }
+  },
   css: [
     '~/assets/scss/base.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
@@ -18,6 +23,11 @@ export default defineNuxtConfig({
     '~/plugins/fontawesome.ts',
     { src: '@/plugins/aos', mode: 'client' }
   ],
+  nitro: {
+    plugins: [
+      '~/server/plugins/sentry.ts',
+    ],
+  },
   extensions: ['ts', 'js'],
   components: [
     {
