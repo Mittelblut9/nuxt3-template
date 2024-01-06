@@ -31,10 +31,10 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-flow": "^2.29.1",
     "eslint-plugin-jsx": "^0.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-typescript": "^0.14.0",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.9.0",
     "postcss": "^8.4.32",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.1.1",
@@ -44,7 +44,7 @@
     "stylelint-config-standard-scss": "^12.0.0",
     "stylelint-scss": "^6.0.0",
     "typescript": "^5.3.3",
-    "vue": "^3.3.12",
+    "vue": "^3.4.3",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
@@ -56,8 +56,9 @@
     "@sentry/node": "^7.92.0",
     "@sentry/profiling-node": "^1.3.2",
     "@sentry/vue": "^7.92.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.6"
   }
 }
