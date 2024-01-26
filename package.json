@@ -13,12 +13,14 @@
     "restart": "npm run stop && npm run start:dev",
     "logs": "docker compose logs -f",
     "stop": "docker compose down",
+    "bash:app": "docker compose exec app bash",
     "code:prettier": "prettier --config .tools/prettier/.prettierrc --ignore-path .tools/prettier/.prettierignore src/ --write",
     "code:prettier:check": "prettier --config .tools/prettier/.prettierrc --ignore-path .tools/prettier/.prettierignore src/ --check",
     "code:eslint": "eslint --ext .ts ./src --c .tools/eslint/.eslintrc.cjs --cache --cache-location .tools/eslint/.cache/",
     "code:lint": "npm run code:prettier:check && npm run code:eslint && npm run scss:lint",
     "code:format": "npm run code:prettier && npm run code:eslint -- --fix && npm run scss:lint -- --fix",
-    "scss:lint": "stylelint src/assets/scss --config .tools/stylelint/stylelintrc.json"
+    "scss:lint": "stylelint src/assets/scss --config .tools/stylelint/stylelintrc.json",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.3",
@@ -34,6 +36,7 @@
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-typescript": "^0.14.0",
+    "husky": "^9.0.6",
     "nuxt": "^3.9.0",
     "postcss": "^8.4.32",
     "postcss-loader": "^7.3.3",
