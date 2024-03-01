@@ -13,15 +13,15 @@ export default defineNuxtPlugin(() => {
         dsn: sentryDsn,
         environment: process.env.NODE_ENV,
         integrations: [
-            new Sentry.BrowserTracing(),
+            Sentry.browserTracingIntegration(),
             new Sentry.BrowserProfilingIntegration(),
-            new Sentry.Replay({
+            Sentry.replayIntegration({
                 maskAllText: true,
                 blockAllMedia: true,
             }),
         ],
         tracesSampleRate: 0.25,
-        tracePropagationTargets: ['https://projects.blackdayz.de', 'http://127.0.0.1:3000'],
+        tracePropagationTargets: ['http://127.0.0.1:3000'],
         profilesSampleRate: 0.5,
 
         replaysSessionSampleRate: 0.5,
