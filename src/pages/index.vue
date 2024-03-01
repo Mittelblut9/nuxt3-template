@@ -4,7 +4,7 @@
 
 <script lang="ts">
 export default {
-    name: 'Homepage',
+    name: 'IndexPage',
     data() {
         return {};
     },
