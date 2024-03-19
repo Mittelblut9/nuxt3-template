@@ -14,7 +14,7 @@ export default defineNuxtPlugin(() => {
         environment: process.env.NODE_ENV,
         integrations: [
             Sentry.browserTracingIntegration(),
-            new Sentry.BrowserProfilingIntegration(),
+            Sentry.browserProfilingIntegration(),
             Sentry.replayIntegration({
                 maskAllText: true,
                 blockAllMedia: true,
