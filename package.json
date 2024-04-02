@@ -59,7 +59,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@sentry/browser": "^7.107.0",
     "@sentry/node": "^7.107.0",
-    "@sentry/profiling-node": "^7.107.0",
+    "@sentry/profiling-node": "^7.109.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "eslint-plugin-import": "^2.29.1",
