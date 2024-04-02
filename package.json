@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
-    "@html-eslint/parser": "^0.22.0",
+    "@html-eslint/parser": "^0.24.0",
     "@nuxt/devtools": "latest",
     "@nuxt/typescript-build": "^3.0.2",
     "@types/aos": "^3.0.7",
