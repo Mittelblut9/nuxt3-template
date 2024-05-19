@@ -18,6 +18,9 @@ export default defineNuxtConfig({
       title: 'Nuxt 3 Template',
     },
   },
+  modules: [
+    '@nuxtjs/i18n'
+  ],
   plugins: [
     '~/plugins/bootstrap.client.ts',
     '~/plugins/fontawesome.ts',
@@ -35,4 +38,22 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  i18n: {
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'no_prefix',
+    defaultLocale: 'de',
+    locales: [
+      {
+        code: 'de',
+        iso: 'de',
+        name: 'Deutsch',
+        file: 'de.json'
+      }
+    ],
+    compilation: {
+      escapeHtml: false,
+      strictMessage: false
+    },
+  },
 })

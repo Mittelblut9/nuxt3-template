@@ -25,6 +25,7 @@
     "@html-eslint/parser": "^0.24.1",
     "@nuxt/devtools": "latest",
     "@nuxt/typescript-build": "^3.0.2",
+    "@nuxtjs/i18n": "^8.3.1",
     "@types/aos": "^3.0.7",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.4.0",
