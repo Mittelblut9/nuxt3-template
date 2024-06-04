@@ -6,18 +6,15 @@ module.exports = {
     },
     plugins: [
         'standard',
-        'prettier',
         'typescript',
         'vue',
         'import',
     ],
     extends: [
         '@nuxt/eslint-config',
-        'plugin:prettier/recommended',
         'plugin:vue/recommended',
         'eslint:recommended',
         'plugin:import/typescript',
-        'prettier',
     ],
     parser: 'vue-eslint-parser',
     parserOptions: {
@@ -37,17 +34,6 @@ module.exports = {
         'consistent-return': 0,
         'no-else-return': 1,
         'no-undef': 0,
-        'prettier/prettier': [
-            'error',
-            {
-                singleQuote: true,
-                semi: true,
-                trailingComma: 'all',
-                printWidth: 100,
-                tabWidth: 4,
-                endOfLine: 'auto',
-            },
-        ],
         'no-async-promise-executor': 0,
         'vue/html-indent': ['error', 4, {
             'attribute': 1,
@@ -115,11 +101,13 @@ module.exports = {
             {
                 'argsIgnorePattern': '^_',
                 'varsIgnorePattern': '^_',
-                'ignoreRestSiblings': true
+                'ignoreRestSiblings': true,
+                'caughtErrorsIgnorePattern': '^_',
             }
         ],
         'vue/no-multiple-template-root': 0,
         'vue/no-v-html': 0,
+        'no-unused-vars': 'off',
     },
     ignorePatterns: [
         'node_modules/**/*',
