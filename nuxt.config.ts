@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/ui',
-    '@nuxtjs/supabase',
+    //'@nuxtjs/supabase',
   ],
   plugins: [
     '~/plugins/bootstrap.client.ts',
@@ -61,16 +61,16 @@ export default defineNuxtConfig({
       strictMessage: false
     },
   },
-  supabase: {
-    url: process.env.SUPABASE_URL,
-    key: process.env.SUPABASE_KEY,
-    redirect: true,
-    redirectOptions: {
-      login: '/admin/login',
-      callback: '/admin/protected/',
-      include: ['/admin/protected(/*)?'],
-      exclude: [],
-      cookieRedirect: false
-    }
-  }
+  // supabase: {
+  //   url: process.env.SUPABASE_URL,
+  //   key: process.env.SUPABASE_KEY,
+  //   redirect: false,
+  //   redirectOptions: {
+  //     login: '',
+  //     callback: '',
+  //     include: ['/(/*)?'],
+  //     exclude: [],
+  //     cookieRedirect: false
+  //   }
+  // }
 })
