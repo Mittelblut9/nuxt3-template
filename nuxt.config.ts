@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/ui',
     //'@nuxtjs/supabase',
+    '@nuxt/image',
   ],
   plugins: [
     '~/plugins/bootstrap.client.ts',

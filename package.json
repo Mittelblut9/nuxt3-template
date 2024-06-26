@@ -24,6 +24,7 @@
     "@babel/eslint-parser": "^7.24.1",
     "@html-eslint/parser": "^0.24.1",
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.7.0",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^8.3.1",
     "@types/aos": "^3.0.7",
