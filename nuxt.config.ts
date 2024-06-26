@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       sentryDsn: process.env.SENTRY_DSN,
     }
   },
+  colorMode: {
+    preference: 'light',
+  },
   css: [
     '~/assets/scss/base.scss',
     '@fortawesome/fontawesome-svg-core/styles.css',
@@ -19,7 +22,8 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxt/ui',
   ],
   plugins: [
     '~/plugins/bootstrap.client.ts',

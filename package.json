@@ -54,6 +54,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@nuxt/eslint-config": "^0.3.10",
     "@nuxt/typescript-runtime": "^3.0.2",
+    "@nuxt/ui": "^2.17.0",
     "@pinia/nuxt": "^0.5.1",
     "@sentry/browser": "^7.107.0",
     "@sentry/node": "^7.107.0",
