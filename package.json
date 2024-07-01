@@ -28,7 +28,7 @@
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^8.3.1",
     "@types/aos": "^3.0.7",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.4.0",
     "eslint": "^8.57.0",
     "eslint-plugin-flow": "^2.29.1",
