@@ -1,8 +1,9 @@
 import * as Sentry from '@sentry/node';
-import { ProfilingIntegration } from '@sentry/profiling-node';
 
-export default defineNitroPlugin((nitroApp) => {
-    const { sentryDsn } = useRuntimeConfig();
+export default defineNitroPlugin((nitroApp) => {    
+    const {
+        public: { sentryDsn },
+    } = useRuntimeConfig();
 
     if (!sentryDsn) {
         console.warn('Sentry DSN not set, skipping Sentry initialization');
@@ -10,9 +11,8 @@ export default defineNitroPlugin((nitroApp) => {
     }
 
     Sentry.init({
-        dsn: sentryDsn,
+        dsn: sentryDsn as string,
         environment: process.env.NODE_ENV,
-        integrations: [new ProfilingIntegration()],
         tracesSampleRate: 0.25,
         profilesSampleRate: 0.25,
     });
