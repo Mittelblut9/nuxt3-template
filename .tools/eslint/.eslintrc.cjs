@@ -6,7 +6,7 @@ module.exports = {
     },
     plugins: [
         'standard',
-        'typescript',
+        '@typescript-eslint/eslint-plugin',
         'vue',
         'import',
     ],
