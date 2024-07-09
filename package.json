@@ -14,10 +14,6 @@
     "logs": "docker compose logs -f",
     "stop": "docker compose down",
     "bash:app": "docker compose exec app bash",
-    "code:eslint": "eslint --ext .ts,.vue ./src --c .tools/eslint/.eslintrc.cjs --cache --cache-location .tools/eslint/.cache/",
-    "code:lint": "npm run code:eslint && npm run scss:lint",
-    "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix",
-    "scss:lint": "stylelint src/assets/scss --config .tools/stylelint/stylelintrc.json",
     "prepare": "husky"
   },
   "devDependencies": {
