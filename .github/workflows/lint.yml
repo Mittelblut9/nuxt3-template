@@ -4,7 +4,7 @@ on:
   pull_request_target:
       branches: [dev, main]
   push:
-      branches: [dev, main]
+      branches: '**'
   
 permissions:
   contents: write
@@ -18,9 +18,12 @@ jobs:
               with:
                 ref: ${{ github.head_ref }}
                 fetch-depth: 0
-            
-            - name: Install dependencies
-              run: npm install --ignore-scripts
+
+            - name: Install submodules
+              run: git submodule update --init --recursive
+
+            - name: Install .tools
+              run: npm --prefix .tools install
 
             - name: Lint
-              run: npm run code:lint
+              run: npm --prefix .tools run code:lint
