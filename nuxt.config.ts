@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/ui',
-    //'@nuxtjs/supabase',
     '@nuxt/image',
   ],
   plugins: [
@@ -62,16 +61,4 @@ export default defineNuxtConfig({
       strictMessage: false
     },
   },
-  // supabase: {
-  //   url: process.env.SUPABASE_URL,
-  //   key: process.env.SUPABASE_KEY,
-  //   redirect: false,
-  //   redirectOptions: {
-  //     login: '',
-  //     callback: '',
-  //     include: ['/(/*)?'],
-  //     exclude: [],
-  //     cookieRedirect: false
-  //   }
-  // }
 })
