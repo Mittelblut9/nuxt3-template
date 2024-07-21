@@ -1,10 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2024-07-21',
   devtools: { enabled: true },
   srcDir: 'src',
   runtimeConfig: {
     public: {
       sentryDsn: process.env.SENTRY_DSN,
+      appwriteConfig: {
+        databaseId: process.env.APPWRITE_DATABASE_ID,
+      },
     }
   },
   colorMode: {
@@ -25,6 +29,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/ui',
     '@nuxt/image',
+    //'nuxt-appwrite'
   ],
   plugins: [
     '~/plugins/bootstrap.client.ts',
@@ -60,5 +65,9 @@ export default defineNuxtConfig({
       escapeHtml: false,
       strictMessage: false
     },
+  },
+  appwrite: {
+    endpoint: process.env.APPWRITE_ENDPOINT,
+    project: process.env.APPWRITE_PROJECT_ID,
   },
 })
