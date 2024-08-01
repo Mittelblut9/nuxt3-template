@@ -46,7 +46,7 @@
     "@sentry/profiling-node": "7.107.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
-    "pinia": "^2.1.7",
+    "pinia": "^2.2.0",
     "sass": "^1.77.8"
   }
 }
