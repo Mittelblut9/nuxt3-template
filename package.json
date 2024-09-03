@@ -30,7 +30,7 @@
     "postcss-loader": "^8.1.1",
     "sass-loader": "^14.2.1",
     "typescript": "^5.5.3",
-    "vue": "^3.4.27",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.3"
   },
   "dependencies": {
