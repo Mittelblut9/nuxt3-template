@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
   '@nuxt/image', '@nuxt/fonts'],
   plugins: [
-    { src: '@/plugins/aos', mode: 'client' }
+    '~/plugins/sentry.ts',
   ],
   nitro: {
     plugins: [

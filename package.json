@@ -22,7 +22,6 @@
     "@nuxt/image": "^1.7.0",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^8.5.1",
-    "@types/aos": "^3.0.7",
     "husky": "^9.1.5",
     "nuxt": "^3.12.3",
     "nuxt-appwrite": "^1.1.0",
@@ -41,7 +40,6 @@
     "@sentry/browser": "7.107.0",
     "@sentry/node": "7.107.0",
     "@sentry/profiling-node": "7.107.0",
-    "aos": "^2.3.4",
     "pinia": "^2.2.0",
     "sass": "^1.77.8"
   }
