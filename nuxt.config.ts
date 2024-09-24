@@ -28,7 +28,6 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
   '@nuxt/image', '@nuxt/fonts'],
   plugins: [
-    '~/plugins/bootstrap.client.ts',
     '~/plugins/fontawesome.ts',
     { src: '@/plugins/aos', mode: 'client' }
   ],
