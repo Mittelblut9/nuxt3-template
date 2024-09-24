@@ -12,7 +12,6 @@ export default defineNuxtPlugin({
             return;
         }
 
-        console.log('Sentry DSN:', sentryDsn);
         Sentry.init({
             dsn: sentryDsn,
             environment: process.env.NODE_ENV,
