@@ -28,15 +28,10 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro'
   ],
   modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
-  '@nuxt/image', '@nuxt/fonts'],
+  '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module'],
   plugins: [
     '~/plugins/sentry.ts',
   ],
-  nitro: {
-    plugins: [
-      '~/server/plugins/sentry.ts',
-    ],
-  },
   extensions: ['ts', 'js'],
   components: [
     {
@@ -48,19 +43,20 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales/',
     strategy: 'no_prefix',
-    defaultLocale: 'de',
+    defaultLocale: 'de-DE',
+    vueI18n: './vue-i18n.options.ts',
     locales: [
       {
-        code: 'de',
-        iso: 'de',
+        code: 'de-DE',
+        language: 'de-DE',
         name: 'Deutsch',
-        file: 'de.json'
-      }
+        file: 'de-DE.yaml'
+      },
     ],
     compilation: {
       escapeHtml: false,
       strictMessage: false
-    },
+    }
   },
   appwrite: {
     endpoint: process.env.APPWRITE_ENDPOINT,

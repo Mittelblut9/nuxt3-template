@@ -1,0 +1,17 @@
+hello:
+    world: "Hello World"
+
+header:
+    links:
+        example:
+            label: "Example"
+            icon: "i-heroicons-rocket-launch"
+            to: "/"
+
+footer: 
+    copyright: "Copyright © {year}"
+    links:
+        example:
+            label: "Example"
+            icon: "i-heroicons-rocket-launch"
+            to: "/"

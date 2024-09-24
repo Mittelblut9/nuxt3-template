@@ -1,9 +1,5 @@
 <template>
     <UHeader :links="links">
-        <template #logo>
-            <Logo class="w-auto h-6" />
-        </template>
-
         <template #panel>
             <UNavigationTree :links="links" />
         </template>
@@ -17,20 +13,10 @@ export default {
     return {
       links: [
         {
-          label: 'Docs',
-          icon: 'i-heroicons-book-open',
-          to: '/getting-started'
+          label: this.$t('header.links.example.label'),
+          icon: this.$t('header.links.example.icon'),
+          to: this.$t('header.links.example.to')
         },
-        {
-          label: 'Pro',
-          icon: 'i-heroicons-square-3-stack-3d',
-          to: '/pro'
-        },
-        {
-          label: 'Releases',
-          icon: 'i-heroicons-rocket-launch',
-          to: '/releases'
-        }
       ]
     };
   }

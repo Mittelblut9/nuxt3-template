@@ -1,7 +1,9 @@
 <template>
     <UFooter :links="links">
         <template #left>
-            Copyright © {{ new Date().getFullYear() }}
+            <span v-text="$t('footer.copyright', {
+              year: new Date().getFullYear(),
+            })" />
         </template>
 
         <template #right>
@@ -24,17 +26,10 @@ export default {
     return {
       links: [
         {
-          label: 'Nuxt UI',
-          to: 'https://ui.nuxt.com/'
+          label: this.$t('header.links.example.label'),
+          icon: this.$t('header.links.example.icon'),
+          to: this.$t('header.links.example.to')
         },
-        {
-          label: 'Nuxt Docs',
-          to: 'https://nuxt.com'
-        },
-        {
-          label: 'Nuxt Studio',
-          to: 'https://nuxt.studio'
-        }
       ]
     };
   }

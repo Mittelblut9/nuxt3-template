@@ -8,10 +8,11 @@ export default defineNuxtPlugin({
             public: { sentryDsn },
         } = useRuntimeConfig();
 
-        if (!sentryDsn) {
+        if (sentryDsn === '') {
             return;
         }
 
+        console.log('Sentry DSN:', sentryDsn);
         Sentry.init({
             dsn: sentryDsn,
             environment: process.env.NODE_ENV,
