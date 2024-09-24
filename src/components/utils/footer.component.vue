@@ -1,9 +1,11 @@
 <template>
     <UFooter :links="links">
         <template #left>
-            <span v-text="$t('footer.copyright', {
-              year: new Date().getFullYear(),
-            })" />
+            <span
+                v-text="$t('footer.copyright', {
+                    year: new Date().getFullYear(),
+                })"
+            />
         </template>
 
         <template #right>
