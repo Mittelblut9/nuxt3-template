@@ -1,19 +1,17 @@
 <template>
-    <div class="dark">
-        <NuxtPage />
+    <div>
+        <HeaderComponent />
+        <UMain>
+            <NuxtPage />
+        </UMain>
+        <FooterComponent />
         <UNotifications>
             <template #title="{ title }">
-                <span
-                    class="text-black"
-                    v-html="title"
-                />
+                <span v-html="title" />
             </template>
 
             <template #description="{ description }">
-                <span
-                    class="text-black"
-                    v-html="description"
-                />
+                <span v-html="description" />
             </template>
         </UNotifications>
     </div>

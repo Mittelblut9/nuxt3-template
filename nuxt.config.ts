@@ -25,6 +25,9 @@ export default defineNuxtConfig({
       title: 'Nuxt 3 Template',
     },
   },
+  extends: [
+    '@nuxt/ui-pro'
+  ],
   modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
   '@nuxt/image', '@nuxt/fonts'],
   plugins: [
