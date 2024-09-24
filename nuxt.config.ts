@@ -16,7 +16,6 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/scss/base.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
   app: {
     head: {
@@ -31,7 +30,6 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
   '@nuxt/image', '@nuxt/fonts'],
   plugins: [
-    '~/plugins/fontawesome.ts',
     { src: '@/plugins/aos', mode: 'client' }
   ],
   nitro: {
