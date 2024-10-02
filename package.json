@@ -22,7 +22,7 @@
     "@nuxt/image": "^1.7.0",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^8.5.1",
-    "husky": "^9.1.5",
+    "husky": "^9.1.6",
     "nuxt": "^3.12.3",
     "nuxt-appwrite": "^1.1.0",
     "postcss": "^8.4.47",
