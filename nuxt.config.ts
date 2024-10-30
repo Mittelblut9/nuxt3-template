@@ -28,8 +28,8 @@ export default defineNuxtConfig({
   extends: [
     '@nuxt/ui-pro'
   ],
-  modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
-  '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module'],
+  modules: ['@nuxtjs/i18n', //'nuxt-appwrite'
+  '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo'],
   plugins: [
     '~/plugins/sentry.ts',
   ],
