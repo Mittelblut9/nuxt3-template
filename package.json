@@ -14,7 +14,8 @@
     "logs": "docker compose logs -f",
     "stop": "docker compose down",
     "bash:app": "docker compose exec app bash",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sass-migrate": "sass-migrator module --migrate-deps src/assets/scss/base.scss"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -29,6 +30,7 @@
     "postcss": "^8.4.47",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^14.2.1",
+    "sass-migrator": "^2.2.1",
     "typescript": "^5.6.3",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
