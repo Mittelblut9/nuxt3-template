@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   ssr: false,
   compatibilityDate: '2024-11-14',
   devtools: { enabled: true },
+  devServer: {
+    https: true,
+  },
   srcDir: 'src',
   runtimeConfig: {
     public: {
