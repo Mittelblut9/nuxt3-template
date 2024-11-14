@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-  compatibilityDate: '2024-09-24',
+  compatibilityDate: '2024-11-14',
   devtools: { enabled: true },
   srcDir: 'src',
   runtimeConfig: {
@@ -11,6 +11,9 @@ export default defineNuxtConfig({
         databaseId: process.env.APPWRITE_DATABASE_ID,
       },
     }
+  },
+  ogImage: {
+    enabled: false
   },
   colorMode: {
     preference: 'dark',
