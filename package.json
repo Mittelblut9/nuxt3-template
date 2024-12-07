@@ -19,29 +19,29 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/fonts": "^0.10.2",
+    "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.8.1",
     "@nuxt/typescript-build": "^3.0.2",
-    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/i18n": "^9.1.1",
     "@nuxtjs/seo": "^2.0.2",
-    "husky": "^9.1.6",
-    "nuxt": "^3.13.2",
+    "husky": "^9.1.7",
+    "nuxt": "^3.14.1592",
     "nuxt-appwrite": "^1.1.1",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "postcss-loader": "^8.1.1",
-    "sass-loader": "^16.0.3",
+    "sass-loader": "^16.0.4",
     "sass-migrator": "^2.2.1",
     "typescript": "^5.6.3",
-    "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^3.0.2",
-    "@nuxt/ui": "^2.18.7",
-    "@nuxt/ui-pro": "^1.4.4",
-    "@pinia/nuxt": "^0.8.0",
+    "@nuxt/ui": "^2.19.2",
+    "@nuxt/ui-pro": "^1.5.0",
+    "@pinia/nuxt": "^0.9.0",
     "@sentry/nuxt": "^8.42.0",
-    "pinia": "^2.2.8",
-    "sass": "^1.80.5"
+    "pinia": "^2.3.0",
+    "sass": "^1.82.0"
   }
 }
