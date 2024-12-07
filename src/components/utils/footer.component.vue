@@ -2,7 +2,7 @@
     <UFooter :links="links">
         <template #left>
             <span
-                v-text="$t('footer.copyright', {
+                v-text="useI18n().t('footer.copyright', {
                     year: new Date().getFullYear(),
                 })"
             />
@@ -28,9 +28,9 @@ export default {
         return {
             links: [
                 {
-                    label: this.$t('header.links.example.label'),
-                    icon: this.$t('header.links.example.icon'),
-                    to: this.$t('header.links.example.to')
+                    label: useI18n().t('header.links.example.label'),
+                    icon: useI18n().t('header.links.example.icon'),
+                    to: useI18n().t('header.links.example.to')
                 },
             ]
         };
