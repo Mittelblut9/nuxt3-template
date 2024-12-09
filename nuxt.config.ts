@@ -69,4 +69,18 @@ export default defineNuxtConfig({
     endpoint: process.env.APPWRITE_ENDPOINT,
     project: process.env.APPWRITE_PROJECT_ID,
   },
+  imports: {
+    dirs: [
+      'composables/**',
+      'utils/**',
+    ]
+  },
+  typescript: {
+    typeCheck: true,
+    strict: false,
+    tsConfig: {
+      exclude: ['node_modules'],
+    },
+    shim: true,
+  }
 })
