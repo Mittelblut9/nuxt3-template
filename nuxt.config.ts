@@ -65,6 +65,7 @@ export default defineNuxtConfig({
       strictMessage: false
     }
   },
+  // @ts-expect-error - appwrite module is not installed in the base template
   appwrite: {
     endpoint: process.env.APPWRITE_ENDPOINT,
     project: process.env.APPWRITE_PROJECT_ID,
