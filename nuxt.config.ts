@@ -1,3 +1,31 @@
+import { load } from 'js-yaml';
+import fs from 'fs';
+import path from 'path';
+
+function loadYamlTranslations(locale: string) {
+  const dirPath = path.resolve(`./i18n/locales/${locale}`);
+  const files = fs.readdirSync(dirPath);
+  return files.reduce((acc, file) => {
+    if (file.endsWith('.yaml') || file.endsWith('.yml')) {
+      const content = fs.readFileSync(path.join(dirPath, file), 'utf8');
+      const data = load(content);
+      return { ...acc, ...data };
+    }
+    return acc;
+  }, {});
+}
+
+function generateJsonTranslations() {
+  const locales = ['de'];
+  locales.forEach((locale) => {
+    const translations = loadYamlTranslations(locale);
+    fs.writeFileSync(
+      path.resolve(`./i18n/locales/.generated/${locale}-${locale.toUpperCase()}.json`),
+      JSON.stringify(translations, null, 2)
+    );
+  });
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
@@ -48,7 +76,7 @@ export default defineNuxtConfig({
   ],
   i18n: {
     lazy: true,
-    langDir: 'locales/',
+    langDir: 'locales/.generated/',
     strategy: 'no_prefix',
     defaultLocale: 'de-DE',
     vueI18n: './vue-i18n.options.ts',
@@ -57,7 +85,7 @@ export default defineNuxtConfig({
         code: 'de-DE',
         language: 'de-DE',
         name: 'Deutsch',
-        file: 'de-DE.yaml'
+        file: 'de-DE.json'
       },
     ],
     compilation: {
@@ -83,5 +111,13 @@ export default defineNuxtConfig({
       exclude: ['node_modules'],
     },
     shim: true,
-  }
+  },
+  hooks: {
+    'build:before': () => {
+      generateJsonTranslations();
+    },
+    'webpack:change': () => {
+      generateJsonTranslations();
+    },
+  },
 })

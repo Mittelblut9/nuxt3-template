@@ -25,3 +25,6 @@ logs
 
 .cert/*
 !.cert/localhost
+
+# Generated translation Files
+i18n/locales/.generated/*.json

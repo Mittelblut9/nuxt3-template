@@ -1,0 +1,6 @@
+header:
+    links:
+        example:
+            label: "Example"
+            icon: "i-heroicons-rocket-launch"
+            to: "/"
