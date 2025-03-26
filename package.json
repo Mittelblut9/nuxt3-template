@@ -51,7 +51,7 @@
     "@nuxt/ui": "^3.0.0",
     "@nuxt/ui-pro": "^3.0.0",
     "@pinia/nuxt": "^0.10.0",
-    "@sentry/nuxt": "^8.47.0",
+    "@sentry/nuxt": "^9.0.0",
     "pinia": "^2.3.0",
     "sass": "^1.85.1",
     "vite-plugin-vue-tracer": "^0.1.3"
