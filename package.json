@@ -3,6 +3,10 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "build": "nuxt build",
     "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert .cert/localhost/localhost.pem --ssl-key .cert/localhost/localhost-key.pem",
@@ -15,15 +19,21 @@
     "stop": "docker compose down",
     "bash:app": "docker compose exec app bash",
     "prepare": "husky",
-    "sass-migrate": "sass-migrator module --migrate-deps src/assets/scss/base.scss"
+    "sass-migrate": "sass-migrator module --migrate-deps src/assets/scss/base.scss",
+    "code:format": "eslint --fix .",
+    "code:lint": "eslint ."
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "^1.2.0",
+    "@nuxt/eslint-config": "^1.2.0",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.8.1",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^9.1.1",
     "@nuxtjs/seo": "^2.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "eslint": "^9.23.0",
     "husky": "^9.1.7",
     "nuxt": "^3.15.0",
     "nuxt-appwrite": "^1.1.1",

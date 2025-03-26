@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro'
   ],
   modules: ['@nuxtjs/i18n', //'nuxt-appwrite'
-  '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo'],
+  '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo', '@nuxt/eslint',],
   plugins: [
     '~/plugins/sentry.ts',
   ],
