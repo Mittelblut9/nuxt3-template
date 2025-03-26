@@ -19,11 +19,10 @@ jobs:
                 ref: ${{ github.head_ref }}
                 fetch-depth: 0
 
-            - name: Install submodules
-              run: git submodule update --init --recursive
-
-            - name: Install .tools
-              run: npm --prefix .tools install
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v2
+              with:
+                version: 10
 
             - name: Lint
-              run: npm --prefix .tools run code:lint
+              run: pnpm --prefix .tools run code:lint
