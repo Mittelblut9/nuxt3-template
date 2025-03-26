@@ -31,7 +31,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^9.1.1",
-    "@nuxtjs/seo": "^2.0.2",
+    "@nuxtjs/seo": "^3.0.0",
     "@types/js-yaml": "^4.0.9",
     "eslint": "^9.23.0",
     "husky": "^9.1.7",
