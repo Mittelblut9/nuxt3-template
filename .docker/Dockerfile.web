@@ -6,7 +6,6 @@ COPY . .
 
 ENV NODE_ENV=development
 
-RUN pnpm update
 RUN pnpm install
 
 EXPOSE 3000

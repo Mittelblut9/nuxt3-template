@@ -28,11 +28,8 @@ function generateJsonTranslations() {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    extends: [
-        '@nuxt/ui-pro'
-    ],
     modules: ['@nuxtjs/i18n', // 'nuxt-appwrite'
-        '@nuxt/ui', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo', '@nuxt/eslint',],
+        '@nuxt/ui-pro', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo', '@nuxt/eslint',],
     plugins: [
         '~/plugins/sentry.ts',
     ],
@@ -58,6 +55,7 @@ export default defineNuxtConfig({
         },
     },
     css: [
+        '~/assets/css/main.css',
         '~/assets/scss/base.scss',
     ],
     colorMode: {
@@ -74,11 +72,14 @@ export default defineNuxtConfig({
     srcDir: 'src',
     extensions: ['ts', 'js'],
     devServer: {
-        https: true,
+        url: 'http://127.0.0.1:3000',
     },
-    compatibilityDate: '2024-11-14',
+    future: {
+        compatibilityVersion: 4,
+    },
+    compatibilityDate: '2025-03-26',
     typescript: {
-        typeCheck: true,
+        typeCheck: false,
         strict: false,
         tsConfig: {
             exclude: ['node_modules'],
@@ -92,6 +93,9 @@ export default defineNuxtConfig({
         'webpack:change': () => {
             generateJsonTranslations();
         },
+        'builder:watch': () => {
+            generateJsonTranslations();
+        },
     },
     // @ts-expect-error - appwrite module is not installed in the base template
     appwrite: {
@@ -103,13 +107,12 @@ export default defineNuxtConfig({
         langDir: 'locales/.generated/',
         strategy: 'no_prefix',
         defaultLocale: 'de-DE',
-        vueI18n: './vue-i18n.options.ts',
         locales: [
             {
                 code: 'de-DE',
                 language: 'de-DE',
                 name: 'Deutsch',
-                file: 'de-DE.json'
+                file: 'de-DE.json',
             },
         ],
         compilation: {
