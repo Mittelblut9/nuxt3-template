@@ -2,7 +2,7 @@ version: '3.8'
   
 services:
   app:
-    image: node:20.9
+    image: node:20.19
     working_dir: /app
     volumes:
       - .:/app
