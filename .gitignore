@@ -28,3 +28,5 @@ logs
 
 # Generated translation Files
 i18n/locales/.generated/*.json
+
+._*

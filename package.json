@@ -9,8 +9,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start:dev": "docker compose up -d && npm run logs",
-    "restart": "npm run stop && npm run start:dev",
+    "start:dev": "docker compose up -d && pnpm run logs",
+    "restart": "pnpm run stop && pnpm run start:dev",
     "logs": "docker compose logs -f",
     "stop": "docker compose down",
     "bash:app": "docker compose exec app bash",
@@ -43,6 +43,7 @@
     "@pinia/nuxt": "^0.9.0",
     "@sentry/nuxt": "^8.47.0",
     "pinia": "^2.3.0",
-    "sass": "^1.85.1"
+    "sass": "^1.85.1",
+    "vite-plugin-vue-tracer": "^0.1.3"
   }
 }
