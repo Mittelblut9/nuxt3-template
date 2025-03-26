@@ -25,4 +25,4 @@ jobs:
                 version: 10
 
             - name: Lint
-              run: pnpm --prefix .tools run code:lint
+              run: pnpm run code:lint
