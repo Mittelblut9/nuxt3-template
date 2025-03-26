@@ -49,7 +49,7 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^3.0.2",
     "@nuxt/ui": "^2.21.1",
-    "@nuxt/ui-pro": "^1.7.0",
+    "@nuxt/ui-pro": "^3.0.0",
     "@pinia/nuxt": "^0.9.0",
     "@sentry/nuxt": "^8.47.0",
     "pinia": "^2.3.0",
