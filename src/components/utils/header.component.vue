@@ -1,6 +1,6 @@
 <template>
     <UHeader>
-        <UNavigationTree :links="links" />
+        <UNavigationMenu :items="links" />
     </UHeader>
 </template>
 
