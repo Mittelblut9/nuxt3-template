@@ -52,7 +52,7 @@
     "@nuxt/typescript-runtime": "^3.0.2",
     "@nuxt/ui": "^3.0.1",
     "@nuxt/ui-pro": "^3.0.1",
-    "@pinia/nuxt": "^0.10.0",
+    "@pinia/nuxt": "^0.11.0",
     "@sentry/nuxt": "^9.0.0",
     "pinia": "^3.0.1",
     "sass": "^1.85.1",
