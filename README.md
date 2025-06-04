@@ -16,9 +16,6 @@ pnpm install
 
 ```bash
 pnpm run scripts:install
-
-```bash
-pnpm run scripts:install
 ```
 
 - Start the development server
