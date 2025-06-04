@@ -2,6 +2,7 @@ import * as readline from 'readline';
 import * as util from 'util';
 import installServerComponents from './scripts/installServerComponents.js';
 import installDocker from './scripts/installDocker.js';
+import installAppwrite from './scripts/installAppwrite.js';
 
 const InstallableItems = {
     IncludeServer: 1,
@@ -52,7 +53,7 @@ async function main() {
                     installDocker();
                     break;
                 case InstallableItems.Appwrite:
-                    console.log(`Installing ${item}...`);
+                    installAppwrite();
                     break;
                 case InstallableItems.Supabase:
                     console.log(`Installing ${item}...`);

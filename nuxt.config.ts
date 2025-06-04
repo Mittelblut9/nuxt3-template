@@ -1,9 +1,17 @@
 import { generateJsonTranslations } from './scripts/i18n/loadYamlTranslations';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/i18n', // 'nuxt-appwrite'
-        '@nuxt/ui-pro', '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module', '@nuxtjs/seo', '@nuxt/eslint',],
+    modules: [
+        '@nuxtjs/i18n',
+        '@nuxt/ui-pro',
+        '@nuxt/image',
+        '@nuxt/fonts',
+        '@sentry/nuxt/module',
+        '@nuxtjs/seo',
+        '@nuxt/eslint',
+    ],
     plugins: [
         '~/plugins/sentry.ts',
     ],
@@ -35,14 +43,6 @@ export default defineNuxtConfig({
     colorMode: {
         preference: 'dark',
     },
-    runtimeConfig: {
-        public: {
-            sentryDsn: process.env.SENTRY_DSN,
-            appwriteConfig: {
-                databaseId: process.env.APPWRITE_DATABASE_ID,
-            },
-        }
-    },
     srcDir: 'src',
     extensions: ['ts', 'js'],
     devServer: {
@@ -70,11 +70,6 @@ export default defineNuxtConfig({
         'builder:watch': () => {
             generateJsonTranslations();
         },
-    },
-    // @ts-expect-error - appwrite module is not installed in the base template
-    appwrite: {
-        endpoint: process.env.APPWRITE_ENDPOINT,
-        project: process.env.APPWRITE_PROJECT_ID,
     },
     i18n: {
         lazy: true,
