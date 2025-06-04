@@ -13,15 +13,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start:dev": "docker compose up -d && pnpm run logs",
-    "restart": "pnpm run stop && pnpm run start:dev",
-    "logs": "docker compose logs -f",
-    "stop": "docker compose down",
-    "bash:app": "docker compose exec app bash",
     "prepare": "husky",
     "sass-migrate": "sass-migrator module --migrate-deps src/assets/scss/base.scss",
     "code:format": "eslint --fix .",
-    "code:lint": "eslint ."
+    "code:lint": "eslint .",
+    "scripts:install": "node scripts/install/install.js"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
