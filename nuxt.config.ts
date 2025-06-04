@@ -1,30 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import { load } from 'js-yaml';
-
-function loadYamlTranslations(locale: string) {
-    const dirPath = path.resolve(`./i18n/locales/${locale}`);
-    const files = fs.readdirSync(dirPath);
-    return files.reduce((acc, file) => {
-        if (file.endsWith('.yaml') || file.endsWith('.yml')) {
-            const content = fs.readFileSync(path.join(dirPath, file), 'utf8');
-            const data = load(content);
-            return { ...acc, ...(typeof data === 'object' && data !== null ? data : {}) };
-        }
-        return acc;
-    }, {});
-}
-
-function generateJsonTranslations() {
-    const locales = ['de'];
-    locales.forEach((locale) => {
-        const translations = loadYamlTranslations(locale);
-        fs.writeFileSync(
-            path.resolve(`./i18n/locales/.generated/${locale}-${locale.toUpperCase()}.json`),
-            JSON.stringify(translations, null, 2)
-        );
-    });
-}
+import { generateJsonTranslations } from './scripts/i18n/loadYamlTranslations';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
