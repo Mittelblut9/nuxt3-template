@@ -2,19 +2,26 @@
 
 ## First Steps
 
-1. Install dependencies
+- Use this template to create a new Nuxt 3 project.
+
+- Clone your fresh created repository to your local machine.
+
+- Install dependencies
 
 ```bash
 pnpm install
 ```
 
-2. Run the installation script
+- Run the installation script
+
+```bash
+pnpm run scripts:install
 
 ```bash
 pnpm run scripts:install
 ```
 
-3. Start the development server
+- Start the development server
 
 ```bash
 pnpm run dev
