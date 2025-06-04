@@ -17,7 +17,7 @@
     "sass-migrate": "sass-migrator module --migrate-deps src/assets/scss/base.scss",
     "code:format": "eslint --fix .",
     "code:lint": "eslint .",
-    "scripts:install": "node scripts/install/install.js"
+    "scripts:install": "node scripts/_install/install.js"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
