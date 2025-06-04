@@ -5,7 +5,7 @@ export default function removeInstallationScripts() {
     try {
         console.info('Removing installation scripts...');
 
-        const scriptsDir = path.join('scripts', 'install');
+        const scriptsDir = path.join('scripts', '_install');
 
         if (fs.existsSync(scriptsDir)) {
             fs.rmSync(scriptsDir, { recursive: true, force: true });
