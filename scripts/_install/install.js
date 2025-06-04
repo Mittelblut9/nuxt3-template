@@ -63,10 +63,13 @@ async function main() {
         }
     }
 
+    console.log('=========================================================');
     console.log('Installation completed successfully.');
     console.log('Please run "pnpm run dev" to start the development server.');
     console.log('If you encounter any issues, please refer to the documentation or open an issue on GitHub.');
     console.log('Thank you for using our nuxt 3 template!');
+    console.log('=========================================================');
+
     removeInstallationScripts();
 
     readlineInterface.close();
