@@ -3,6 +3,7 @@ import * as util from 'util';
 import installServerComponents from './scripts/installServerComponents.js';
 import installDocker from './scripts/installDocker.js';
 import installAppwrite from './scripts/installAppwrite.js';
+import removeInstallationScripts from './scripts/removeInstallationScripts.js';
 
 const InstallableItems = {
     IncludeServer: 1,
@@ -61,6 +62,12 @@ async function main() {
             }
         }
     }
+
+    console.log('Installation completed successfully.');
+    console.log('Please run "pnpm run dev" to start the development server.');
+    console.log('If you encounter any issues, please refer to the documentation or open an issue on GitHub.');
+    console.log('Thank you for using our nuxt 3 template!');
+    removeInstallationScripts();
 
     readlineInterface.close();
 }
