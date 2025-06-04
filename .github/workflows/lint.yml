@@ -4,7 +4,7 @@ on:
   pull_request_target:
       branches: [dev, main]
   push:
-      branches: '**'
+      branches: ['**']
   
 permissions:
   contents: write
@@ -21,9 +21,6 @@ jobs:
 
             - name: Setup pnpm
               uses: pnpm/action-setup@v4
-              with:
-                version: 10.7.0
-
             - name: Install Eslint
               run: pnpm install
 
