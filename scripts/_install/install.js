@@ -14,7 +14,7 @@ const InstallableItems = {
 
 const translations = {
     en: {
-        IncludeServer: 'With Server Components (API)',
+        IncludeServer: 'Server Components (API, Config, Utils)',
         Database: 'Database',
         Docker: 'Docker',
         Appwrite: 'Appwrite',
@@ -41,7 +41,7 @@ async function main() {
     const question = util.promisify(readlineInterface.question).bind(readlineInterface);
 
     for (const item in InstallableItems) {
-        const wantToInstall = await question(`${translations[defaultLanguage][item]}? (y/N) `);
+        const wantToInstall = await question(`Do you want to install your Project with: ${translations[defaultLanguage][item]}? (y/N) `);
         if (wantToInstall.toLowerCase() === 'y') {
             switch (InstallableItems[item]) {
                 case InstallableItems.IncludeServer:
