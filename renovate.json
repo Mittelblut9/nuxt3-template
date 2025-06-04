@@ -1,9 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "github>danielroe/renovate"
   ],
+  "dependencyDashboard": true,
   "patch": {
     "enabled": false
-  }
+  },
+  "automerge": true,
+  "automergeType": "pr"
 }
