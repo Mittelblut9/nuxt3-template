@@ -11,7 +11,6 @@ export default function removeInstallationScripts() {
             if (packageJson.scripts && packageJson.scripts['scripts:install']) {
                 delete packageJson.scripts['scripts:install'];
                 fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-                console.info('Install script removed from package.json.');
             } else {
                 console.warn('No install script found in package.json.');
             }
@@ -23,7 +22,6 @@ export default function removeInstallationScripts() {
         const scriptsDir = path.join('scripts', '_install');
         if (fs.existsSync(scriptsDir)) {
             fs.rmSync(scriptsDir, { recursive: true, force: true });
-            console.info('Installation scripts removed successfully.');
         } else {
             console.warn('Installation scripts directory does not exist. Nothing to remove.');
         }
