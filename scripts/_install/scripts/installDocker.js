@@ -4,7 +4,7 @@ import * as fs from 'fs';
 export default function installDocker() {
     try {
         console.info('Installing Docker files...');
-        const dockerFiles = path.join('scripts', 'install', '_files', 'docker');
+        const dockerFiles = path.join('scripts', '_install', '_files', 'docker');
         const destinationPath = path.join('.');
 
         fs.readdirSync(dockerFiles).forEach((file) => {
