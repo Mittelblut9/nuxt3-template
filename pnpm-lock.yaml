@@ -71,9 +71,6 @@ importers:
       nuxt:
         specifier: 3.16.1
         version: 3.16.1(@parcel/watcher@2.5.1)(@types/node@22.13.14)(db0@0.3.1)(eslint@9.23.0(jiti@2.4.2))(ioredis@5.6.0)(lightningcss@1.30.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.37.0)(sass@1.89.1)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.3(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.1)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.2))(yaml@2.7.1)
-      nuxt-appwrite:
-        specifier: 1.2.0
-        version: 1.2.0(magicast@0.3.5)
       pinia:
         specifier: 3.0.1
         version: 3.0.1(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
@@ -2749,9 +2746,6 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  appwrite@17.0.1:
-    resolution: {integrity: sha512-bTLxle4wasY8uQewr/tdANC4AhQ/AkcaPfMd0L9N4tQecQwUVXow2EhlWh98jURBAMn6cyoN/G46G4w3sVkcOQ==}
-
   archiver-utils@5.0.2:
     resolution: {integrity: sha512-wuLJMmIBQYCsGZgYLTy5FIB2pF6Lfb6cXMSF8Qywwk3t20zWnAi7zLcQFdKQmIB8wyZpY5ER38x08GbwtR2cLA==}
     engines: {node: '>= 14'}
@@ -4647,9 +4641,6 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
-
-  nuxt-appwrite@1.2.0:
-    resolution: {integrity: sha512-9lkDCE2JrAbIkflj1N4O5chJVU30xr93fmtCJdlKvzYkhdJqG04C38bcuNuRxjBLfiD77Y09BURI03Zms7cyqg==}
 
   nuxt-link-checker@4.3.0:
     resolution: {integrity: sha512-Ps//GJjuQ6yKZvSrOmpH7goG7YKioBctlm9IfTn3EDvp0cO0Cho0n7DO7RcVquclj/rLtVCukacRlbN411/z0Q==}
@@ -9606,8 +9597,6 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  appwrite@17.0.1: {}
-
   archiver-utils@5.0.2:
     dependencies:
       glob: 10.4.5
@@ -11657,13 +11646,6 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
-
-  nuxt-appwrite@1.2.0(magicast@0.3.5):
-    dependencies:
-      '@nuxt/kit': 3.16.1(magicast@0.3.5)
-      appwrite: 17.0.1
-    transitivePeerDependencies:
-      - magicast
 
   nuxt-link-checker@4.3.0(magicast@0.3.5)(vite@6.2.3(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.1)(terser@5.39.0)(yaml@2.7.1))(vue@3.5.13(typescript@5.8.2)):
     dependencies:
