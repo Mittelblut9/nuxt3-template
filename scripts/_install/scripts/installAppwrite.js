@@ -5,9 +5,10 @@ import * as path from 'path';
 export default function installAppwrite() {
     console.info('Installing Appwrite module for Nuxt 3...');
     console.info('Running "npx nuxi@latest module add appwrite"...');
-    const execFailed = execSync('npx nuxi@latest module add appwrite', { stdio: 'inherit' });
-    if (execFailed) {
-        console.error('Error adding Appwrite module:', execFailed.error);
+    try {
+        execSync('npx nuxi@latest module add appwrite', { stdio: 'inherit' });
+    } catch (error) {
+        console.error('Error adding Appwrite module:', error.message);
         throw new Error('Failed to add Appwrite module.');
     }
     console.info('Appwrite module added successfully.');
