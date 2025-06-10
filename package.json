@@ -37,7 +37,7 @@
     "@tailwindcss/postcss": "4.1.8",
     "@tailwindcss/vite": "4.1.8",
     "@types/js-yaml": "4.0.9",
-    "eslint": "9.23.0",
+    "eslint": "9.28.0",
     "husky": "9.1.7",
     "js-yaml": "4.1.0",
     "nuxt": "3.17.5",
