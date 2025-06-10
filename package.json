@@ -39,7 +39,7 @@
     "@types/js-yaml": "4.0.9",
     "eslint": "9.23.0",
     "husky": "9.1.7",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "4.1.0",
     "nuxt": "3.17.5",
     "pinia": "3.0.1",
     "postcss": "8.5.3",
