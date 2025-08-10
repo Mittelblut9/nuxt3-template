@@ -3,7 +3,8 @@ import * as path from 'path';
 
 export default function installServerComponents() {
     try {
-        const serverPath = path.join('src', 'server');
+        const serverPath = path.join('server');
+        const sharedPath = path.join('shared');
 
         const serverUtilsPath = path.join(serverPath, 'utils');
         const serverConfigPath = path.join(serverPath, 'config');
@@ -12,6 +13,7 @@ export default function installServerComponents() {
         fs.mkdirSync(serverUtilsPath, { recursive: true });
         fs.mkdirSync(serverConfigPath, { recursive: true });
         fs.mkdirSync(serverApiPath, { recursive: true });
+        fs.mkdirSync(sharedPath, { recursive: true });
 
         const serverInterfaceFile = path.join(serverUtilsPath, 'interface.ts');
         const serverEnumFile = path.join(serverUtilsPath, 'enum.ts');

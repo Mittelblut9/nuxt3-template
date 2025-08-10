@@ -43,7 +43,6 @@ export default defineNuxtConfig({
     colorMode: {
         preference: 'dark',
     },
-    srcDir: 'src',
     extensions: ['ts', 'js'],
     devServer: {
         url: 'http://127.0.0.1:3000',
