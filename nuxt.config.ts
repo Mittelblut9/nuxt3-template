@@ -1,7 +1,6 @@
 import { generateJsonTranslations } from './scripts/i18n/loadYamlTranslations';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/i18n',
@@ -71,7 +70,6 @@ export default defineNuxtConfig({
         },
     },
     i18n: {
-        lazy: true,
         langDir: 'locales/.generated/',
         strategy: 'no_prefix',
         defaultLocale: 'de-DE',
