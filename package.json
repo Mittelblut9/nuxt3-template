@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "1.8.0",
-    "@nuxt/eslint-config": "1.8.0",
+    "@nuxt/eslint": "1.9.0",
+    "@nuxt/eslint-config": "1.9.0",
     "@nuxt/fonts": "0.11.4",
     "@nuxt/image": "1.11.0",
     "@nuxt/kit": "4.0.3",
@@ -33,7 +33,7 @@
     "@nuxtjs/i18n": "10.0.4",
     "@nuxtjs/seo": "3.1.0",
     "@pinia/nuxt": "0.11.2",
-    "@sentry/nuxt": "10.3.0",
+    "@sentry/nuxt": "10.5.0",
     "@tailwindcss/postcss": "4.1.11",
     "@tailwindcss/vite": "4.1.11",
     "@types/js-yaml": "4.0.9",
