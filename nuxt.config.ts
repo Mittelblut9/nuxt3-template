@@ -4,7 +4,7 @@ import { generateJsonTranslations } from './scripts/i18n/loadYamlTranslations';
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/i18n',
-        '@nuxt/ui-pro',
+        '@nuxt/ui',
         '@nuxt/image',
         '@nuxt/fonts',
         '@sentry/nuxt/module',
