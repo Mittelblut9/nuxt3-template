@@ -1,4 +1,4 @@
-FROM guergeiro/pnpm:22-10-slim
+FROM guergeiro/pnpm:24-10-slim
 
 WORKDIR /app
 
